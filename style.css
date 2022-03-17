@@ -1,0 +1,208 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color: #cccccc;
+}
+.container {
+   width: 1200px;
+   margin: 100px auto;
+   padding: 25px;
+}
+.block {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.box {
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 25px 35px;
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   transition: all 0.2s linear;
+   position: relative;
+}
+.bg__color-1 {
+   background-color: #ff9ff3;
+}
+.bg__color-2 {
+   background-color: #48dbfb;
+}
+.bg__color-3 {
+   background-color: #1dd1a1;
+}
+.bg__color-4 {
+   background-color: #10ac84;
+   overflow: hidden;
+}
+.bg__color-5 {
+   background-color: #fbc531;
+}
+.bg__color-6 {
+   background-color: #e84118;
+}
+.bg__color-7 {
+   background-color: #ff7979;
+}
+.bg__color-8 {
+   background-color: #22a6b3;
+   overflow: hidden;
+}
+img {
+   width: 20%;
+   transition: all 0.5s linear;
+}
+h1 {
+   font-size: 20px;
+   margin: 15px 0;
+}
+p {
+   line-height: 20px;
+}
+.box:hover img {
+   transform: scale(1.3);
+}
+.box:hover {
+   background-color: blue;
+}
+span {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   background-color: inherit;
+   transform: rotate(45deg);
+   position: absolute;
+   right: -2%;
+   animation: threeangle 0.8s infinite;
+   z-index: 9999;
+}
+@keyframes threeangle {
+   0% {
+      transform: scale(1.1) rotate(45deg);
+   }
+   100% {
+      transform: scale(1) rotate(45deg);
+   }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+   .container {
+      width: 100%;
+      padding: 10px 2px;
+   }
+   .box {
+      width: 90%;
+      overflow: visible;
+   }
+   .bg__color-8 {
+      overflow: hidden;
+   }
+   span {
+      position: absolute;
+      right: 42%;
+      bottom: -3%;
+   }
+}
+
+@media (min-width: 321px) and (max-width: 524.9px) {
+   .container {
+      width: 100%;
+      padding: 10px 2px;
+   }
+   .box {
+      width: 270px;
+      overflow: visible;
+   }
+   .bg__color-8 {
+      overflow: hidden;
+   }
+   span {
+      position: absolute;
+      right: 44%;
+      bottom: -3%;
+   }
+}
+@media (min-width: 525px) and (max-width: 739.9px) {
+   .container {
+      width: 100%;
+      padding: 10px 2px;
+   }
+   .box {
+      width: 250px;
+      overflow: visible;
+   }
+   .bg__color-2,
+   .bg__color-4,
+   .bg__color-6,
+   .bg__color-8 {
+      overflow: hidden;
+   }
+   span {
+      position: absolute;
+      right: -2%;
+   }
+}
+@media (min-width: 740px) and (max-width: 939.9px) {
+   .container {
+      width: 100%;
+      padding: 10px 2px;
+   }
+   .box {
+      width: 240px;
+      overflow: visible;
+   }
+   .bg__color-3,
+   .bg__color-6,
+   .bg__color-8 {
+      overflow: hidden;
+   }
+   span {
+      position: absolute;
+      right: -2%;
+   }
+}
+@media (min-width: 940px) and (max-width: 1149.9px) {
+   .container {
+      width: 100%;
+      padding: 10px 2px;
+   }
+   .box {
+      width: 230px;
+      overflow: visible;
+   }
+   .bg__color-4,
+   .bg__color-8 {
+      overflow: hidden;
+   }
+   span {
+      position: absolute;
+      right: -2%;
+   }
+}
+@media (min-width: 1150px) {
+   .container {
+      width: 1100px;
+      padding: 10px 2px;
+      /* margin: 10px; */
+   }
+   .box {
+      width: 250px;
+      overflow: visible;
+      padding: 10px 2px;
+   }
+   .bg__color-4,
+   .bg__color-8 {
+      overflow: hidden;
+   }
+   span {
+      position: absolute;
+      right: -2%;
+   }
+}
